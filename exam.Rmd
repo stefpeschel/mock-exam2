@@ -11,10 +11,6 @@ editor_options:
     wrap: sentence
 ---
 
----
-title: "Probeklausur: Einführung in die Statistische Software (R)"
----
-
 Bitte führen Sie zuerst folgenden R-Markdown-Block aus:
 
 ```{r, purl=FALSE}
