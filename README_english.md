@@ -17,10 +17,11 @@ and in German or English. This should make it easier to read/work with the tasks
 Take your time to look at the tasks. They are sorted by 
 increasing difficulty and divided into different topics, which will 
 give you hints as to where you should look for support in the course material. 
-For each task, you will find empty functions labeled with headings such as 
-*"Write a function that does X ”*. Fill in the 
-function body (i.e. the part between the curly brackets `{ }`) with 
-code that does what is required. Example:
+
+For each task you will find a section **"Your code ”**. Complete the missing 
+code there according to the instructions in the task. If, for example, a function 
+with an empty function body is given, you should complete this. 
+Example:
 
 ```r
 # Write a function that divides x by y
@@ -37,6 +38,14 @@ ex01Divide <- function(x, y) {
 x / y
 }
 ```
+
+Some tasks are provided with `NULL` as a placeholder, e.g. 
+
+```r
+ex0303a <- NULL
+```
+
+In this example, the final result of your calculation should be assigned to the object `ex0303a`.
 
 (Remember that a function always returns the result of the last executed command).
 

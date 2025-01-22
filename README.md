@@ -19,10 +19,11 @@ erleichtern.
 Schauen Sie sich die Aufgaben in Ruhe an. Diese sind nach 
 steigender Schwierigkeit und in verschiedene Themen unterteilt, die Ihnen 
 Hinweise darauf geben, wo Sie im Material nach Unterstützung suchen sollten. 
-Zu jeder Aufgabe finden Sie leere Funktionen, die mit Überschriften wie 
-*"Schreiben Sie eine Funktion, die X macht"* versehen sind. Füllen Sie den 
-Funktionskörper (d. h. den Teil zwischen den geschweiften Klammern `{ }`) mit 
-Code, der das tut, was verlangt wird. Beispiel:
+
+Zu jeder Aufgabe finden Sie einen Abschnitt **"Ihr Code"**. Ergänzen Sie dort den 
+fehlenden Code entsprechend den Anweisungen in der Aufgabe. Ist beispielsweise 
+eine Funktion mit leerem Funktionskörper gegeben, sollen Sie diesen ergänzen. 
+Beispiel:
 
 ```r
 # Schreiben Sie eine Funktion, die x durch y teilt
@@ -39,6 +40,14 @@ ex01Divide <- function(x, y) {
 x / y
 }
 ```
+
+Manche Aufgaben sind mit `NULL` als Platzhalter versehen, z.B. 
+
+```r
+ex0303a <- NULL
+```
+
+Dort soll das Endergebnis Ihrer Berechnung dem Objekt `ex0303a` zugewiesen werden.
 
 (Denken Sie daran, dass eine Funktion immer das Ergebnis des letzten ausgeführten Befehls zurückgibt.)
 
