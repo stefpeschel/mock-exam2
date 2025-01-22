@@ -1,0 +1,17 @@
+    name: Test 1
+
+    on: [push]
+
+    jobs:
+      build:
+        timeout-minutes: 10
+        name: Autograding
+        runs-on: self-hosted
+        steps:
+          - uses: actions/checkout@v2
+          - name: Setup
+            shell: Rscript {0}
+            run:  renv::restore()
+          - name: Testing
+            timeout-minutes: 5
+            run: Rscript evaluate_submission.R --exercise=1
