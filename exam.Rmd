@@ -11,10 +11,16 @@ editor_options:
     wrap: sentence
 ---
 
-Bitte führen Sie zuerst folgenden R-Markdown-Block aus:
+Bitte führen Sie zuerst die folgenden R Markdown Chunks aus:
 
-```{r, purl=FALSE}
+```{r, purl=FALSE,  message=FALSE, warning=FALSE}
 renv::restore()
+```
+
+Hinweis: Den Chunk mit `renv::restore()` wird es in der eigentlichen Klausur nicht geben. Dort sind bereits alle Pakete installiert, die Sie benötigen.
+
+```{r, purl=TRUE, message=FALSE, warning=FALSE}
+source("load_packages.R")
 ```
 
 
@@ -595,6 +601,6 @@ Reichen Sie Ihren Code ein, indem Sie Ihre Ergebnisse über Git pushen.
 
 ## Alle Tests laufen lassen
 
-```{r evaluate_notebook}
+```{r evaluate_notebook, purl=FALSE}
 EXERCISES <- character(0); source("evaluate_submission.R")
 ```
