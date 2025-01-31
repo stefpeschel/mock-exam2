@@ -159,18 +159,18 @@ Maybe you did not launch the \"%s\"-script the intended way, using `RScript %s`?
 #   verifyHash(tests.dir, "tests directory")
 # }
 
+source("load_packages.R")
 source("convert_submission.R")
-source("submission.R")
 testenv <- new.env(parent = .GlobalEnv)
 # .R files
-#allfiles <- list.files("R", pattern="\\.[rR]$", recursive=TRUE, full.names=TRUE)
+allfiles <- list.files("R", pattern="\\.[rR]$", recursive=TRUE, full.names=TRUE)
 # all relevant helper functions in the helper folder
 helper.files = list.files(c(".github/helpers"),
                           pattern="*.R$", full.names=TRUE,
                           ignore.case=TRUE)
 # source both into test environment
 invisible(
-  lapply(c(helper.files), source, local = testenv,
+  lapply(c(allfiles, helper.files), source, local = testenv,
          echo = FALSE, verbose = FALSE, prompt.echo = FALSE)
 )
 testenv$EXERCISES <- EXERCISES
