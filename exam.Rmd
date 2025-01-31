@@ -19,7 +19,7 @@ renv::restore()
 
 Hinweis: Den Chunk mit `renv::restore()` wird es in der eigentlichen Klausur nicht geben. Dort sind bereits alle Pakete installiert, die Sie benötigen.
 
-```{r, purl=TRUE, message=FALSE, warning=FALSE}
+```{r, purl=FALSE, message=FALSE, warning=FALSE}
 source("load_packages.R")
 ```
 
@@ -55,7 +55,7 @@ repository.
 
 Eine Reproduktion in deutscher Sprache ist zulässig.
 
-## Hintergrund zur Grafik
+### Hintergrund zur Grafik
 
 Bei der Datenerhebung wurden tausende Mediziner gefragt, welche sie für die Top X (1-8)
 Risikofaktoren für einen Herz-Infarkt halten.
@@ -99,7 +99,7 @@ Die Umrechnung erfolgt wie folgt:
 Achten Sie darauf, dass alle Funktionsargumente (Inputs) nur erlaubte Werte und Datentypen annehmen.
 Die minimale erlaubte Temperatur ist -459.67.
 
-## Details zu der Funktion
+### Details zu der Funktion
 
 Die Funktion ist wie folgt benannt: `ex02temperature_conversion`.
 
